@@ -9,7 +9,7 @@
   }
 
 /* Responsivitas Header */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   header {
     padding: 0.5rem 1rem;
   }
@@ -23,20 +23,20 @@
     flex-direction: column;
     gap: 0.5rem;
   }
-}
+} */
 
 /* Responsivitas Articles Section */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr); /* Dua kartu per baris */
     gap: 15px;
   }
-}
+} */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .card-container {
     grid-template-columns: 1fr; /* Satu kartu per baris */
-  }
+  } */
 
   .card {
     padding: 10px;
@@ -80,7 +80,8 @@
     font-weight: bold;
   }
   
-  header ul li a:hover {
+  header ul li 
+a:hover {
     text-decoration: underline;
   }
   body {
