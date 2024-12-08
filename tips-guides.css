@@ -1,0 +1,145 @@
+/* Global Variables */
+:root {
+  --soft-red: #d96666;
+  --peach: #f2c2c2;
+  --light-beige: #fff8f5;
+  --charcoal-gray: #4e4e4e;
+  --soft-teal: #96cfcb;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--charcoal-gray);
+  background-color: var(--light-beige);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: var(--soft-red);
+  color: white;
+  padding: 1rem 2rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Button Styling */
+button {
+  background-color: var(--soft-red);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--peach);
+  color: var(--charcoal-gray);
+}
+
+/* Tips Guides Section */
+#tips-guides {
+  padding: 2rem;
+  text-align: left;
+  background-color: var(--light-beige);
+}
+
+/* Tip Items */
+.tip-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tip-image {
+  flex: 1 1 100px; /* Reduced minimum width for image */
+  max-width: 60px; /* Reduced maximum width for image */
+  height: auto;
+  object-fit: cover;
+  border: 4px solid var(--soft-teal); /* Add border around the image */
+  margin: 10px; /* Add some space around the image */
+  border-radius: 8px; /* Optional: Rounded corners for the image */
+}
+
+.tip-item h3 {
+  color: var(--soft-red);
+  margin: 0.5rem 0;
+}
+
+.tip-item p {
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+.tip-item div {
+  padding: 1rem;
+  flex: 2;
+}
+
+/* Details Element Styling */
+details {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
+  border-left: 4px solid var(--soft-teal);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+details summary {
+  font-weight: bold;
+  color: var(--soft-red);
+  cursor: pointer;
+}
+
+details ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+details ul ul {
+  list-style-type: circle;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .tip-item {
+    flex-direction: column;
+  }
+
+  .tip-image {
+    max-width: 100%;
+    height: auto; /* Adjust height proportionally */
+    border: 4px solid var(--soft-teal); /* Retain border styling */
+    margin: 10px auto; /* Center image */
+    border-radius: 8px;
+  }
+}

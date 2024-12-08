@@ -1,0 +1,340 @@
+/* Import Font Modern */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Color Palette */
+:root {
+    --soft-red: #D96666;
+    --pink: #f09b9b;
+    --peach: #F2C2C2;
+    --light-beige: #FFF8F5;
+    --charcoal-gray: #4E4E4E;
+    --soft-teal: #96CFCB;
+}
+
+/* Gaya Global */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--charcoal-gray);
+    background-color: var(--light-beige);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--soft-red);
+    color: white;
+    padding: 0.5rem 1rem; /* Kurangi padding vertikal */
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0; /* Menghapus margin di bawah header */
+}
+
+/* Menghilangkan margin default elemen dalam header */
+header nav,
+header nav ul,
+header nav ul li,
+header .logo-container {
+    margin: 0;
+    padding: 0;
+}
+
+/* Atur spacing elemen dalam header */
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Header Logo Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 100px; /* Ukuran lebih kecil */
+    height: auto;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Responsivitas Header */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    .logo-container {
+        flex-direction: column; /* Logo dan teks bertumpuk */
+        gap: 5px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+}
+
+/* Bagian Ilustrasi */
+.carousel {
+    margin-top: 20px;
+    border: none;
+    background-color: lightgrey;
+    width: 100%; /* Lebar carousel 100% */
+    max-width: 1200px; /* Membatasi lebar maksimal carousel */
+    margin-left: auto; /* Menjaga agar carousel tetap terpusat */
+    margin-right: auto; /* Menjaga agar carousel tetap terpusat */
+}
+
+.carousel-inner {
+    width: 100%; /* Mengisi lebar kontainer */
+}
+
+.carousel-inner > .item > img {
+    width: 100%; /* Mengatur gambar agar mengisi lebar kontainer */
+    height: auto; /* Menjaga proporsi gambar tetap terjaga */
+    object-fit: contain; /* Agar gambar tetap terlihat lengkap dan tidak terpotong */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Posisi panah */
+.left.carousel-control, .right.carousel-control {
+    width: 5%;
+}
+
+.left.carousel-control {
+    left: -10px;
+}
+
+.right.carousel-control {
+    right: -10px;
+}
+
+/* Styling tambahan untuk panah */
+.carousel-control span {
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Tombol */
+button {
+    background-color: var(--soft-red);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--peach);
+    color: var(--charcoal-gray);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    margin: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--soft-red);
+}
+
+section p {
+    margin: 1rem 0;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--charcoal-gray);
+    color: var(--light-beige);
+    padding: 1rem;
+}
+
+/* Bagian Artikel */
+.artikel-section {
+    padding: 40px 20px;
+    position: relative;
+    margin-left: 70px;
+}
+
+.artikel-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #333;
+}
+
+.artikel-caption {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #666;
+}
+
+/* Tombol Panah */
+.nav-buttons {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #D96666;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #D96666;
+    border-color: white;
+}
+
+.nav-btn::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: solid #D96666;
+    border-width: 0 2px 2px 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover::before {
+    border-color: white;
+}
+
+.prev-btn::before {
+    transform: rotate(135deg);
+}
+
+.next-btn::before {
+    transform: rotate(-45deg);
+}
+
+.artikel-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.artikel-card {
+    flex: 0 0 300px;
+    background-color: #F2C2C2;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artikel-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.artikel-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.artikel-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.btn.artikel-btn {
+    background-color: #D96666;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn.artikel-btn:hover {
+    background-color: #96CFCB;
+    color: #333;
+    transform: scale(1.05);
+}
