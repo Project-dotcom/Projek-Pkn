@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Bantuan</title>
+    <link rel="stylesheet" href="help-contact.css">
+    <!-- Tambahkan CDN FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h1>Stop Bullying</h1>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="interactive-test.html">Tes Interaktif</a></li>
+                <li><a href="help-contact.html">Kontak Bantuan</a></li>
+                <li><a href="tips-guides.html">Tips dan Panduan</a></li>
+                <li><a href="articles.html">Artikel & Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Anda Tidak Sendirian</h2>
+        <p>Jika Anda atau seseorang yang Anda kenal membutuhkan bantuan terkait bullying, kami siap membantu. <b>Hubungi kami!</b></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-grid">
+            <div class="contact-item">
+                <!-- Menggunakan ikon email FontAwesome -->
+                <i class="fas fa-envelope fa-3x"></i>
+                <h3>Telepon atau WhatsApp Kemkes</h3>
+                <p>0812-9979-9777</p>
+                <button onclick="window.open('https://wa.me/6281299799777')">Hubungi sekarang</button>
+            </div>
+            <div class="contact-item">
+                <!-- Menggunakan ikon telepon FontAwesome -->
+                <i class="fas fa-phone-alt fa-3x"></i>
+                <h3>hotline SPPKS UPI</h3>
+                <p>6281316570771</p>
+                <button onclick="window.open('https://wa.me/6281316570771')">Hubungi sekarang</button>
+            </div>
+            <div class="contact-item">
+                <!-- Menggunakan ikon WhatsApp FontAwesome -->
+                <i class="fab fa-whatsapp fa-3x"></i>
+                <h3>Darurat Hubungi Hotline SAPA 129</h3>
+                <p>08111129129</p>
+                <button onclick="window.open('https://wa.me/628111129129')">Hubungi sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kelompok 5 PKn</p>
+    </footer>
+
+    <script>
+        // Copy contact information to clipboard
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert(`Kontak "${text}" berhasil disalin ke clipboard.`);
+            }).catch(err => {
+                console.error('Gagal menyalin teks ke clipboard:', err);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Bullying - Tes Interaktif</title>
+    <link rel="stylesheet" href="interactive-test.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Stop Bullying</h1>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="interactive-test.html">Tes Interaktif</a></li>
+                <li><a href="help-contact.html">Kontak Bantuan</a></li>
+                <li><a href="tips-guides.html">Tips dan Panduan</a></li>
+                <li><a href="articles.html">Artikel & Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="interactive-test">
+        <h2>Tes Interaktif</h2>
+        <p>Gunakan tes ini untuk mengetahui sejauh mana Anda memahami bullying.</p>
+        <button id="start-btn">Mulai Tes</button>
+        
+        <!-- Kontainer untuk kuis -->
+        <div id="quiz-container" style="display: none;">
+            <p id="question"></p>
+            <div id="options"></div>
+            <button id="next-btn" style="display: none;">Pertanyaan Selanjutnya</button>
+        </div>
+    
+        <!-- Kontainer hasil -->
+        <div id="result" style="display: none;">
+            <h3>Hasil Tes</h3>
+            <p id="score"></p>
+            <p id="message"></p>
+            <button id="restart-btn">Coba Lagi</button>
+            <button id="home-btn">Beranda</button>
+        </div>
+
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Kelompok 7</p>
+    </footer>
+    <script src="interactive-test.js"></script>
+</body>
+</html>
