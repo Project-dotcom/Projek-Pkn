@@ -8,37 +8,27 @@
     --peach: #F2C2C2;
     --light-beige: #FFF8F5;
     --charcoal-gray: #4E4E4E;
+    --soft-teal: #96CFCB;
 }
 
-/* Global Styles */
+/* Gaya Global */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    color: var(--charcoal-gray);
     background-color: var(--light-beige);
     line-height: 1.6;
-    color: var(--charcoal-gray);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 /* Header */
 header {
     background-color: var(--soft-red);
     color: white;
+    padding: 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem;
     position: relative;
-    z-index: 10;
 }
 
 .logo-container {
@@ -48,43 +38,37 @@ header {
 }
 
 .logo {
-    width: 50px;
+    width: 100px;
     height: auto;
     object-fit: contain;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 24px;
     margin: 0;
-    font-weight: bold;
 }
 
-/* Navigation */
 nav ul {
     display: flex;
     list-style: none;
+    gap: 1.5rem;
     margin: 0;
     padding: 0;
-    gap: 1.5rem;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: medium;
-    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: var(--pink);
+    text-decoration: underline;
 }
 
-/* Hamburger Menu */
+/* Menu Toggle untuk Mobile */
 .menu-toggle {
-    display: none; /* Hidden by default */
-    flex-direction: column;
-    gap: 5px;
+    display: none;
     cursor: pointer;
 }
 
@@ -93,112 +77,161 @@ nav ul li a:hover {
     width: 25px;
     height: 3px;
     background-color: white;
+    margin: 5px 0;
 }
 
-/* Carousel */
-.carousel-inner img {
-    width: 100%;
-    height: auto;
+/* Section Styles */
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 1200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Artikel Section */
-.artikel-section {
-    padding: 2rem 1rem;
+section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--soft-red);
+}
+
+section p {
+    margin: 1rem 0;
+}
+
+/* Tombol */
+button {
+    background-color: var(--soft-red);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
     background-color: var(--peach);
+    color: var(--charcoal-gray);
+    transform: scale(1.05);
 }
 
-.artikel-title {
-    font-size: 24px;
-    margin-bottom: 0.5rem;
-    text-align: center;
-}
-
-.artikel-caption {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
+/* Artikel Styles */
 .artikel-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 .artikel-card {
-    background: white;
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 0 0 300px;
+    background-color: #F2C2C2;
+    border-radius: 10px;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .artikel-card img {
-    border-radius: 8px;
-    margin-bottom: 1rem;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .artikel-card h4 {
     font-size: 18px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px;
 }
 
 .artikel-card p {
     font-size: 14px;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
-.artikel-btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: var(--soft-red);
-    color: white;
-    border-radius: 4px;
+.btn.artikel-btn {
+    background-color: #D96666;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
     font-weight: bold;
-    transition: background 0.3s ease;
+    font-size: 14px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.artikel-btn:hover {
-    background: var(--pink);
+.btn.artikel-btn:hover {
+    background-color: #96CFCB;
+    color: #333;
+    transform: scale(1.05);
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 1rem;
     background-color: var(--charcoal-gray);
-    color: white;
-    font-size: 14px;
+    color: var(--light-beige);
+    padding: 1rem;
 }
 
-/* Responsive Styles */
+/* Responsivitas */
 @media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+
     .menu-toggle {
-        display: flex; /* Show toggle button on smaller screens */
+        display: block;
     }
 
     nav ul {
-        display: none; /* Hide menu by default */
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         background-color: var(--soft-red);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         padding: 1rem 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 9;
     }
 
     nav ul.active {
-        display: flex; /* Show menu when active */
+        display: flex;
     }
 
-    nav ul li {
-        text-align: center;
-        padding: 0.5rem 0;
+    .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .artikel-wrapper {
-        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .artikel-card {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .btn {
+        padding: 0.6rem 1rem;
+        font-size: 12px;
     }
 }
