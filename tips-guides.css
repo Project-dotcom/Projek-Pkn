@@ -130,16 +130,17 @@ details ul ul {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .tip-item {
     flex-direction: column;
   }
 
   .tip-image {
     max-width: 100%;
-    height: auto; /* Adjust height proportionally */
-    border: 4px solid var(--soft-teal); /* Retain border styling */
-    margin: 10px auto; /* Center image */
+    height: auto; 
+    border: 4px solid var(--soft-teal);
+    margin: 10px auto;
     border-radius: 8px;
   }
-}
+} */
+
