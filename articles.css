@@ -8,7 +8,7 @@
     --soft-teal: #96cfcb;
   }
 
-/* Responsivitas Header */
+Responsivitas Header */
 /* @media (max-width: 768px) {
   header {
     padding: 0.5rem 1rem;
@@ -35,9 +35,9 @@
 
 /* @media (max-width: 480px) {
   .card-container {
-    grid-template-columns: 1fr; /* Satu kartu per baris */
-  } */
-
+    grid-template-columns: 1fr; /* Satu kartu per baris 
+  }
+*/
   .card {
     padding: 10px;
   }
