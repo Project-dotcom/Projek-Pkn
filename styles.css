@@ -93,6 +93,43 @@ h1 {
     line-height: 1.2;
 }
 
+/* Responsivitas Umum */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .artikel-card {
+        flex: 0 0 100%; /* Card menjadi 100% lebar */
+        margin-bottom: 20px; /* Tambah jarak antar card */
+    }
+
+    .artikel-wrapper {
+        flex-direction: column; /* Tampilkan secara vertikal */
+    }
+}
+
+/* Responsivitas Ekstra untuk Ukuran Sangat Kecil */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 18px; /* Kurangi ukuran font */
+    }
+
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 12px;
+    }
+
+    .carousel-control span {
+        font-size: 30px; /* Ukuran panah lebih kecil */
+    }
+}
+
 /* Responsivitas Header */
 @media (max-width: 768px) {
     header {
