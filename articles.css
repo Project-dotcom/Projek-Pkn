@@ -28,7 +28,7 @@
 /* Responsivitas Articles Section */
 /* @media (max-width: 768px) {
   .card-container {
-    grid-template-columns: repeat(2, 1fr); /* Dua kartu per baris */
+    grid-template-columns: repeat(2, 1fr); /* Dua kartu per baris 
     gap: 15px;
   }
 } */
