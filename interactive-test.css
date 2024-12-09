@@ -55,6 +55,25 @@ header ul li a:hover {
     color: var(--accent-yellow);
 }
 
+/* Header Logo Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 100px; /* Ukuran lebih kecil */
+    height: auto;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    line-height: 1.2;
+}
+
 /* Buttons */
 button {
     background-color: var(--soft-red);
