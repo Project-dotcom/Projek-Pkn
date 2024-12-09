@@ -56,6 +56,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--pink);
 }
 
 header ul {
