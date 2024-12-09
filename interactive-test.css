@@ -54,6 +54,12 @@ header ul li a:hover {
     text-decoration: underline;
     color: var(--accent-yellow);
 }
+/* Styling untuk logo ikon */
+link[rel="icon"] {
+    /* Tidak langsung terlihat di halaman, hanya untuk SEO atau pengembangan */
+    color: #333;
+    font-size: 12;
+}
 
 /* Header Logo Styling */
 .logo-container {
